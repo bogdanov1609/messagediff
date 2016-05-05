@@ -177,7 +177,7 @@ type MapKey struct {
 }
 
 func (n MapKey) String() string {
-	return fmt.Sprintf("[%#v]", n.Key)
+	return n.Key.(string)
 }
 
 // SliceIndex is a path element representing a index of a slice.
